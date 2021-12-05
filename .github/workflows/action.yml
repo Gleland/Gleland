@@ -15,7 +15,20 @@ jobs:
         with:
           # Your GitHub token
           token: ${{ secrets.METRICS_TOKEN }}
+          
+          # Options
+          user: Gleland
           template: classic
+          base: header, activity, repositories
+          config_timezone: America/Denver
+          plugin_gists: yes
+          plugin_languages: yes
+          plugin_languages_colors: github
+          plugin_languages_limit: 8
+          plugin_languages_recent_days: 14
+          plugin_languages_recent_load: 300
+          plugin_languages_sections: most-used
+          plugin_languages_threshold: 0%
 
 
       # Runs a set of commands using the runners shell
